@@ -33,8 +33,8 @@ $(document).ready(function () {
   var basicOption = {
     title: {
       display: true,
-      text: 'Temperature & Humidity of Shipment',
-      fontSize: 36
+      text: 'Temperature & Humidity (RVE Azure IoT)',
+      fontSize: 32
     },
     scales: {
       yAxes: [{
@@ -103,7 +103,7 @@ $(document).ready(function () {
         warningRaised = true;
       }
 
-      if (!errorRaised && obj.temperature>27){
+      if (!errorRaised && obj.temperature>35){
         alertify.error('Temperature reached @ High of ' +obj.temperature );
         errorRaised = true;
         
